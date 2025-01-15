@@ -1,0 +1,25 @@
+@import '../../styles/settings.scss';
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    background-color: darken($color-dark, 3%);
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    display: inline-block;
+    margin: 0 36px 0 0;
+    position: relative;
+    a {
+      text-decoration: none;
+      color: $color-light;
+    }
+}

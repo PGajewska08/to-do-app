@@ -1,19 +1,23 @@
 import styles from './NavBar.module.scss';
+import Container from '../Container/Container';
 
 const NavBar = ()  => {
     return (
-        <nav>
+        <nav className={styles.nav}>
+            <span className='fa-solid fa-bars'></span>
+            <div>
             <ul>
                 <li>
-                    Home
+                    <a href="/">Home</a>
                 </li>
                 <li>
-                    Favorite
+                    <a href="/favorite">Favorite</a>
                 </li>
                 <li>
-                    About
+                    <a href="/about">About</a>
                 </li>
             </ul>
+            </div> 
         </nav>
     );
 };
