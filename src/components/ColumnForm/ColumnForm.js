@@ -13,7 +13,8 @@ const ColumnForm = props => {
     const [icon, setIcon] = useState('');
     const handleSubmit = e => {
         e.preventDefault();
-        dispatch(addColumn({  id: shortid(), title, icon, }));
+        dispatch(addColumn(  {id: shortid(), title, icon, listId: props.listId}));
+        console.log("listId: " , props.listId);
         setTitle('');
         setIcon('');
     };
